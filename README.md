@@ -6,7 +6,6 @@ Optimized for most **mobile**, **tablet** to **desktop** — built with **Tailwi
 
 🔗 **Live Demo**
 https://zahrazalife.github.io/Moha-Cafe-Menu/
-
 ---
 
 ## 📝 Description
