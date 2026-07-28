@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="منوی کافه موحا شامل قهوه دمی،بارگرم،بار سرد،دمنوش و صبحانه؛انتخابی خوش طعم برای هر سلیقه.">
+    <meta name="keywords" content="منو،کافه موحا،نوشیدنی،قهوه،صبحانه،">
+    <title>کافه موحا- مزه ها اینجان،روی صفحه ات</title>
+    <link rel="shortcut icon" href="src/assets/img/favlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/output.css">
+
+</head>
+
+<body class="relative">
+    <div
+        class="fixed inset-0 z-0 bg-[linear-gradient(250deg,rgba(192,124,69,0.719),rgba(110,193,109,0.648),rgba(200,114,8,0.605))]">
+    </div>
+
+    <main class=" max-w-7xl mx-auto flex items-start min-h-screen pt-14 md:pt-0 px-4 sm:px-6 md:pr-27.5 ">
+
+        <aside
+            class="flex fixed top-0 right-0 md:right-0 mx-auto bg-[#145f3c] w-full md:w-26 h-24 md:h-screen flex-row md:flex-col items-center md:items-stretch justify-start md:justify-start gap-4 md:gap-3 z-100 py-5 px-4 md:px-0 md:py-6 overflow-x-auto md:overflow-y-auto">
+
+            <!-- لوگو با عرض مناسب -->
+            <img src="src/assets/img/baner.png" alt="لوگو کافه موحا"
+                class="shrink-0 mt-0 md:mt-1 w-10 md:w-[70%] rounded-[60px] shadow-[0_0_10px_1px_#d2cf8d9e] ml-1 md:ml-0">
+
+            <button data-target="#breakfast"
+                class="sidebar-link min-w-20 md:min-w-24 rounded-[15px] bg-[#224f42] text-[#d2caba] text-sm shadow-[0_0_5px_1px_rgba(216,214,165,0.372)] flex flex-col items-center py-1.5 md:py-2 px-2 md:px-0 hover:bg-[#2d5f4d] hover:scale-105 transition-all duration-300 focus-visible:outline-2 focus-visible:outline-[#d2ce8d] focus-visible:bg-[#d2ce8d] focus-visible:text-[#330404] focus-visible:scale-110">
+                <img src="src/assets/img/breakfast.png" alt="صبحانه" class="w-9 md:w-10 h-9 md:h-10 object-contain">
+                <p class="text-[12px] md:text-sm mt-0.5 md:mt-1 whitespace-nowrap">صبحانه</p>
+            </button>
+
+            <!-- دکمه قهوه -->
+            <button data-target="#coffee"
+                class="sidebar-link min-w-20 md:min-w-24 rounded-[15px] bg-[#224f42] text-[#d2caba] text-sm shadow-[0_0_5px_1px_rgba(216,214,165,0.372)] flex flex-col items-center py-1.5 md:py-2 px-2 md:px-0 hover:bg-[#2d5f4d] hover:scale-105 transition-all duration-300 focus-visible:outline-2 focus-visible:outline-[#d2ce8d] focus-visible:bg-[#d2ce8d] focus-visible:text-[#330404] focus-visible:scale-110">
+                <img src="src/assets/img/coffee.png" alt="قهوه" class="w-9 md:w-10 h-9 md:h-10 object-contain">
+                <p class="text-[12px] md:text-sm mt-0.5 md:mt-1 whitespace-nowrap">قهوه</p>
+            </button>
+
+            <button data-target="#dam-coffee"
+                class="sidebar-link min-w-20 md:min-w-24 rounded-[15px] bg-[#224f42] text-[#d2caba] text-sm shadow-[0_0_5px_1px_rgba(216,214,165,0.372)] flex flex-col items-center py-1.5 md:py-2 px-2 md:px-0 hover:bg-[#2d5f4d] hover:scale-105 transition-all duration-300 focus-visible:outline-2 focus-visible:outline-[#d2ce8d] focus-visible:bg-[#d2ce8d] focus-visible:text-[#330404] focus-visible:scale-110">
+                <img src="src/assets/img/dami coffee 1.png" alt="قهوه دمی"
+                    class="w-9 md:w-10 h-9 md:h-10 object-contain">
+                <p class="text-[12px] md:text-sm mt-0.5 md:mt-1 whitespace-nowrap">قهوه دمی</p>
+            </button>
+
+            <button data-target="#hot-bar"
+                class="sidebar-link min-w-20 md:min-w-24 rounded-[15px] bg-[#224f42] text-[#d2caba] text-sm shadow-[0_0_5px_1px_rgba(216,214,165,0.372)] flex flex-col items-center py-1.5 md:py-2 px-2 md:px-0 hover:bg-[#2d5f4d] hover:scale-105 transition-all duration-300 focus-visible:outline-2 focus-visible:outline-[#d2ce8d] focus-visible:bg-[#d2ce8d] focus-visible:text-[#330404] focus-visible:scale-110">
+                <img src="src/assets/img/hotbar.png" alt="بار گرم" class="w-9 md:w-10 h-9 md:h-10 object-contain">
+                <p class="text-[12px] md:text-sm mt-0.5 md:mt-1 whitespace-nowrap">بار گرم</p>
+            </button>
+
+            <!-- دکمه چای و دمنوش (با عرض ثابت) -->
+            <button data-target="#tea"
+                class="sidebar-link min-w-20 md:min-w-24 rounded-[15px] bg-[#224f42] text-[#d2caba] shadow-[0_0_5px_1px_rgba(216,214,165,0.372)] flex flex-col items-center py-1.5 md:py-2 px-2 md:px-0 hover:bg-[#2d5f4d] hover:scale-105 transition-all duration-300 focus-visible:outline-2 focus-visible:outline-[#d2ce8d] focus-visible:bg-[#d2ce8d] focus-visible:text-[#330404] focus-visible:scale-110">
+                <img src="src/assets/img/damnoosh.png" alt="دمنوش" class="w-9 md:w-10 h-9 md:h-10 object-contain">
+                <p class="text-[10px] md:text-sm mt-0.5 md:mt-1 whitespace-nowrap">چای و دمنوش</p>
+            </button>
+
+            <!-- دکمه کیک و کوکی -->
+            <button data-target="#cake"
+                class="sidebar-link min-w-20 md:min-w-24 rounded-[15px] bg-[#224f42] text-[#d2caba] text-sm shadow-[0_0_5px_1px_rgba(216,214,165,0.372)] flex flex-col items-center py-1.5 md:py-2 px-2 md:px-0 hover:bg-[#2d5f4d] hover:scale-105 transition-all duration-300 focus-visible:outline-2 focus-visible:outline-[#d2ce8d] focus-visible:bg-[#d2ce8d] focus-visible:text-[#330404] focus-visible:scale-110">
+                <img src="src/assets/img/cake.png" alt="کیک و کوکی" class="w-9 md:w-10 h-9 md:h-10 object-contain">
+                <p class="text-[10px] md:text-sm mt-0.5 md:mt-1 whitespace-nowrap">کیک و کوکی</p>
+            </button>
+
+        </aside>
+
+        <div class="flex-1 p-4 sm:p-6 md:p-8 pb-44 rtl flex flex-col gap-8 md:gap-12">
+            <div class="h-4 md:hidden" aria-hidden="true"></div>
+
+            <section id="breakfast"
+                class="bg-white/85 backdrop-blur-sm rounded-3xl p-5 sm:p-6 md:p-[25px_30px] shadow-lg border border-white/40 scroll-mt-20">
+                <h2 class="text-2xl sm:text-[28px] text-[#0e4333] border-b-4 border-[#d2ce8d] pb-2 mb-6">🍳 صبحانه
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-5">
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">املت</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">170,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">نیمرو</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">150,000 تومان</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="coffee"
+                class="bg-white/85 backdrop-blur-sm rounded-3xl p-5 sm:p-6 md:p-[25px_30px] shadow-lg border border-white/40 scroll-mt-20">
+                <div
+                    class="flex items-center gap-2 sm:gap-10 md:gap-20 lg:gap-30 border-b-4 border-[#d2ce8d] text-[#0e4333] pb-2 mb-6">
+                    <h2 class="text-2xl sm:text-[28px] shrink-0">☕ قهوه</h2>
+                    <marquee behavior="scroll" dir="ltr" direction="right" scrollamount="5"
+                        class="text-[12px]  md:text-sm lg:text-base text-[#214918] w-full">
+                        * تمامی آیتم ها (به جز اسپرسو) به صورت آیس نیز سرو می گردند *
+                    </marquee>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-5">
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">اسپرسو80/20 (سینگل)</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">100,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">اسپرسو 100%عربیکا (سینگل)</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">100,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">اسپرسو80/20 (دبل)</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">110,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">اسپرسو 100%عربیکا (دبل)</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">130,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">امریکانو 80/20</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">120,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">امریکانو 100%عربیکا</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">150,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">لاته 80/20</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">190,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">لاته 100%عربیکا</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">220,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">کاپوچینو 80/20</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">185,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">کاپوچینو 100%عربیکا</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">200,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">موکا 80/20</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">220,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">موکا 100%عربیکا</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">250,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">کارامل ماکیاتو 80/20</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">210,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">کارامل ماکیاتو 100%عربیکا</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">240,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">فندق ماکیاتو 80/20</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">230,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">فندق ماکیاتو 100%عربیکا</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">270,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">وانیل ماکیاتو 80/20</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">200,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">وانیل ماکیاتو 100%عربیکا</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">230,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">قهوه موحا 80/20</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">260,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">قهوه موحا 100%عربیکا</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">320,000 تومان</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="dam-coffee"
+                class="bg-white/85 backdrop-blur-sm rounded-3xl p-5 sm:p-6 md:p-[25px_30px] shadow-lg border border-white/40 scroll-mt-20">
+                <h2 class="text-2xl sm:text-[28px] text-[#0e4333] border-b-4 border-[#d2ce8d] pb-2 mb-6">☕ قهوه دمی
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-5">
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">کمکس</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">170,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">قهوه فرانسه</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">160,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">V60</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">150,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">ایروپرس</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">170,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">قهوه ترک</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">120,000 تومان</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="hot-bar"
+                class="bg-white/85 backdrop-blur-sm rounded-3xl p-5 sm:p-6 md:p-[25px_30px] shadow-lg border border-white/40 scroll-mt-20">
+                <div class="flex items-center border-b-4 border-[#d2ce8d] text-[#0e4333] pb-2 mb-6">
+                    <img src="src/assets/img/hotbar.png" alt="بار گرم" class="w-7 md:w-10 h-7 md:h-10 object-contain">
+                    <h2 class="text-2xl sm:text-[28px]">بار گرم</h2>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-5">
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">هات چاکلت</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">200,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">وایت چاکلت</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">180,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">چای ماسالا</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">190,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">شیر عسل قهوه</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">210,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">لوتو وایت</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">200,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">هیزل نات</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">185,000 تومان</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tea"
+                class="bg-white/85 backdrop-blur-sm rounded-3xl p-5 sm:p-6 md:p-[25px_30px] shadow-lg border border-white/40 scroll-mt-20">
+                <div class="flex items-center border-b-4 border-[#d2ce8d] text-[#0e4333] pb-2 mb-6">
+                    <img src="src/assets/img/damnoosh.png" alt="دمنوش" class="w-7 md:w-10 h-7 md:h-10 object-contain">
+                    <h2 class="text-2xl sm:text-[28px]">چای و دمنوش</h2>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-5">
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">چای سیاه</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">65,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">چای مراکشی</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">140,000 تومان</p>
+                        <p class="text-[13px] text-gray-600 mt-1.5 border-t border-dashed border-gray-200 pt-1.5">
+                            ترکیبات: نعنا، چای سبز</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">دمنوش زمستان</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">170,000 تومان</p>
+                        <p class="text-[13px] text-gray-600 mt-1.5 border-t border-dashed border-gray-200 pt-1.5">
+                            ترکیبات: بابونه، زنجبیل، دارچین، چای کوهی، آویشن</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">دمنوش آرامش</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">180,000 تومان</p>
+                        <p class="text-[13px] text-gray-600 mt-1.5 border-t border-dashed border-gray-200 pt-1.5">
+                            ترکیبات: گل گاوزبان، سنبل الطیب، به لیمو</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">دمنوش انرژی</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">180,000 تومان</p>
+                        <p class="text-[13px] text-gray-600 mt-1.5 border-t border-dashed border-gray-200 pt-1.5">
+                            ترکیبات: عسل، عناب، زنجبیل، به لیمو</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">چای موحا</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">190,000 تومان</p>
+                        <p class="text-[13px] text-gray-600 mt-1.5 border-t border-dashed border-gray-200 pt-1.5">
+                            ترکیبات: زعفران، هل، دارچین</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="cake"
+                class="bg-white/85 backdrop-blur-sm rounded-3xl p-5 sm:p-6 md:p-[25px_30px] shadow-lg border border-white/40 scroll-mt-20">
+                <div class="flex items-center border-b-4 border-[#d2ce8d] text-[#0e4333] pb-2 mb-6">
+                    <img src="src/assets/img/cake.png" alt="کیک" class="w-7 md:w-10 h-7 md:h-10 object-contain">
+                    <h2 class="text-2xl sm:text-[28px]">کیک و کوکی</h2>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-5">
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">کیک شکلاتی</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">190,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">کیک هویج گردو</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">185,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">کیک رژیمی</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">195,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">کروسان ساده</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">180,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">کروسان شکلاتی</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">200,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">کوکی</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">95,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">خرما بار</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">95,000 تومان</p>
+                    </div>
+                    <div
+                        class="bg-white/90 p-4 md:p-[18px_20px] rounded-2xl shadow-sm border-r-[5px] border-[#d2ce8d] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-lg font-bold text-[#1f3d32]">چیز کیک</h3>
+                        <p class="text-[17px] font-bold text-[#b3731e] my-1">200,000 تومان</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <footer class="sticky bottom-0 right-0 w-full bg-[#173123] z-10 shadow-[0_-4px_15px_rgba(0,0,0,0.3)]">
+        <div class="relative mx-auto p-3 sm:p-[10px_20px] max-w-7xl flex flex-col items-center gap-1.5">
+            <div class="flex flex-wrap justify-center items-center gap-4 sm:gap-7.5 w-full">
+                <div class="flex items-center gap-2 text-[#e8c4a4] text-sm sm:text-[16px] flex-wrap justify-center">
+                    <svg class="animate-blink-delay w-4 sm:w-5 h-4 sm:h-5 text-[#f5b37a] shrink-0" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <a href="https://nshn.ir/64_bvPIAYx4zsD" class="text-xs sm:text-sm">آدرس ما: ستارخان ، نبش باقرخان
+                        غربی ، جنب بانک صادرات </a>
+                    <span
+                        class="text-2xl sm:text-[35px] font-bold text-[#ffc66a] group-hover:text-[#ffe08a] transition-colors duration-300">
+                        کافه موحا
+                    </span>
+                </div>
+                <div class="flex items-center gap-2 text-[#e8c4a4] text-xs sm:text-sm flex-wrap justify-center">
+                    <svg class="w-4 sm:w-5 h-4 sm:h-5 text-[#f5b37a] shrink-0" viewBox="0 0 24 24" width="26"
+                        height="26">
+                        <path fill="currentColor"
+                            d="M6.6,10.8C8.1,13.7 10.3,15.9 13.2,17.4L15.4,15.2C15.7,14.9 16.1,14.8 16.5,14.9C17.7,15.3 19,15.5 20.3,15.5C20.8,15.5 21.2,15.9 21.2,16.4V20.3C21.2,20.8 20.8,21.2 20.3,21.2C10.7,21.2 2.8,13.3 2.8,3.7C2.8,3.2 3.2,2.8 3.7,2.8H7.6C8.1,2.8 8.5,3.2 8.5,3.7C8.5,5 8.7,6.3 9.1,7.5C9.2,7.9 9.1,8.3 8.8,8.6L6.6,10.8Z">
+                        </path>
+                    </svg>
+                    <p>شماره تماس :</p>
+                    <div class="flex flex-row gap-5">
+                        <a href="tel:+989921697245"
+                            class="text-xs sm:text-[15px] font-bold text-[#dfc689]">09921697245</a>
+                        <a href="tel:+989199541447"
+                            class="text-xs sm:text-[15px] font-bold text-[#dfc689]">09199541447</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="bg-[#0e4333]/90 px-3 sm:px-4 py-0.5 absolute -top-5 sm:-top-6 rounded-[30px] shadow-[0_0_12px_rgba(249,172,90,0.25)] border border-[#d2ce8d]/30 text-center">
+                <p class="text-[#ffffa0] text-xs sm:text-base whitespace-nowrap">☺️ سفارشتون رو انتخاب کنید، میرسیم
+                    خدمتتون ☺️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/assets/js/script.js"></script>
+
+</body>
+
+</html>
